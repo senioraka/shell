@@ -1,16 +1,15 @@
+#!/bin/bash
 
-# GitHub profiling bilan mos email va ismingni shu yerga yoz
-GIT_AUTHOR_NAME= "Shamir Enor"
-GIT_AUTHOR_EMAIL= "senioraka@users.noreply.github.com"
-
-
+# === CONFIGURATION ===
+GIT_AUTHOR_NAME="Shamir Enor"
+GIT_AUTHOR_EMAIL="azamjonbro@gmail.com"
 
 git config user.name "$GIT_AUTHOR_NAME"
 git config user.email "$GIT_AUTHOR_EMAIL"
 
 touch pixel.txt
 
-# Harf balandligi = 7, Engineer so‘zi = 8 harf = 8x5 + bo‘shliqlar
+# Engineer matnining 7 qatordan iborat pixel shakli
 PIXEL_MATRIX=(
 "  #     ##    ###   ###   ###   ###   ###   ###  "
 " # #   # #   #     #     #     #     #     #     "
@@ -21,7 +20,7 @@ PIXEL_MATRIX=(
 "# #   ###   ###   ###   ###   ###   ###   ###    "
 )
 
-# Sana: 2022-01-02 (yakshanba)
+# Sana boshlanishi: 2022-yilning birinchi yakshanbasi
 start_date="2022-01-02"
 
 for ((col=0; col<${#PIXEL_MATRIX[0]}; col++)); do
@@ -33,7 +32,7 @@ for ((col=0; col<${#PIXEL_MATRIX[0]}; col++)); do
       offset_days=$((weeks * 7 + day_of_week))
       commit_date=$(date -d "$start_date + $offset_days days" +"%Y-%m-%d")
 
-      echo "🟩 Pixel ($col,$row) — $commit_date — 20 commit"
+      echo "🟩 Pixel ($col,$row) — $commit_date — 20 commits"
 
       for ((c=1; c<=20; c++)); do
         time_offset="$((c * 2)) minutes"
@@ -49,5 +48,5 @@ for ((col=0; col<${#PIXEL_MATRIX[0]}; col++)); do
 done
 
 echo ""
-echo "✅ Engineer yozuvi 2022-yilga 20 commitli bloklar bilan chizildi!"
-echo "🔼 Push qilish: git remote add origin <repo-url> && git push -u origin main --force"
+echo "✅ 'ENGINEER' yozuvi 2022-yil contribution graphga chizildi!"
+echo "📤 Endi push qil: git remote add origin https://github.com/senioraka/YANGI-REPO && git push -u origin main --force"
