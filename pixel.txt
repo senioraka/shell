@@ -5438,3 +5438,4 @@ Engineer pixel 22,0 - 17
 Engineer pixel 22,0 - 18
 Engineer pixel 22,0 - 19
 Engineer pixel 22,0 - 20
+Engineer pixel 24,5 - 1
