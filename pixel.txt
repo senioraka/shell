@@ -5860,3 +5860,4 @@ Engineer pixel 32,2 - 19
 Engineer pixel 32,2 - 20
 Engineer pixel 32,3 - 1
 Engineer pixel 32,3 - 2
+Engineer pixel 32,3 - 3
