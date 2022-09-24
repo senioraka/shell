@@ -6080,3 +6080,4 @@ Engineer pixel 37,6 - 19
 Engineer pixel 37,6 - 20
 Engineer pixel 38,0 - 1
 Engineer pixel 38,0 - 2
+Engineer pixel 38,0 - 3
