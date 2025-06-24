@@ -11,17 +11,16 @@ touch pixel.txt
 
 # Engineer matnining 7 qatordan iborat pixel shakli
 PIXEL_MATRIX=(
-"  #     ##    ###   ###   ###   ###   ###   ###  "
-" # #   # #   #     #     #     #     #     #     "
-"###   ###    ##    ##    ##    ##    ##    ##    "
-"# #   # #     #     #     #     #     #     #    "
-"# #   # #    ##    ##    ##    ##    ##    ##    "
-"# #   # #   #     #     #     #     #     #      "
-"# #   ###   ###   ###   ###   ###   ###   ###    "
+"######   #     #  ######   #######   #    #  ######   ######  ######"
+"#        ##    #  #           #      ##   #  #        #       #    #" 
+"#####    # #   #  #  ###      #      # #  #  #####    #####   ######"
+"#        #  #  #  #    #      #      #  # #  #        #       #  #  "
+"######   #   # #  ######   #######   #   ##  ######   ######  #    #"
 )
 
+
 # Sana boshlanishi: 2022-yilning birinchi yakshanbasi
-start_date="2022-01-02"
+start_date="2023-01-02"
 
 for ((col=0; col<${#PIXEL_MATRIX[0]}; col++)); do
   for ((row=0; row<7; row++)); do
